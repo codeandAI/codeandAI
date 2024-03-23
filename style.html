@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - CodeForge</title>
+    <link rel="stylesheet" href="fr.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Payment</h1>
+        <p>Complete your purchase</p>
+    </header>
+
+    <section id="payment-form">
+        <h2>Payment Details</h2>
+        <form action="/process_payment" method="post">
+            <div class="input-group">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="card-number" required>
+            </div>
+
+            <div class="input-group">
+                <label for="expiry-date">Expiry Date</label>
+                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YYYY" required>
+            </div>
+
+            <div class="input-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" required>
+            </div>
+
+            <div class="input-group">
+                <label for="card-holder-name">Card Holder Name</label>
+                <input type="text" id="card-holder-name" name="card-holder-name" required>
+            </div>
+
+            <div class="input-group">
+                <p>Select Bank:</p>
+                <label for="tbc"><input type="radio" id="tbc" name="bank" value="tbc" required> TBC Bank</label><br>
+                <label for="bank-of-georgia"><input type="radio" id="bank-of-georgia" name="bank" value="bank-of-georgia" required> Bank of Georgia</label>
+            </div>
+
+            <input type="hidden" name="amount" value="100"> <!-- Hidden field for the amount -->
+
+            <input type="submit" value="Pay 100 GEL">
+        </form>
+        <script src="./gd.js"></script>
+        <a href="file:///C:/Users/user/Desktop/priject/selection.html">
+            <button>start teaching</button>
+        </a>
+               
+    </section>
+</body>
+</html>
+
